@@ -1,6 +1,6 @@
-# Mi Proyecto: Frontend y Backend con Vite, React, TypeScript y Docker Compose
+# Listar nodos: Frontend y Backend con Vite, React, TypeScript, NestJs y Docker Compose
 
-¡Bienvenido a **Mi Proyecto**! Este repositorio alberga una aplicación full-stack compuesta por un **frontend** construido con **Vite**, **React** y **TypeScript**, y un **backend** (especificaciones del backend pueden variar). Ambos servicios están dockerizados y orquestados usando **Docker Compose**, lo que facilita su despliegue y gestión en diferentes entornos.
+¡Bienvenido a **Listar nodos**! Este repositorio alberga una aplicación full-stack compuesta por un **frontend** construido con **Vite**, **React** y **TypeScript**, y un **backend** construido con **NestJs** y **TypeScript**. Ambos servicios están dockerizados y orquestados usando **Docker Compose**, lo que facilita su despliegue y gestión en diferentes entornos.
 
 ## Características
 
@@ -10,7 +10,7 @@
   - Dockerizado para despliegue consistente.
   
 - **Backend:**
-  - Construido con NestJs.
+  - Construido con **NestJs** y **TypeScript**.
   - Dockerizado para despliegue consistente.
   
 - **Orquestación:**
@@ -26,9 +26,9 @@
   - [pnpm](https://pnpm.io/)
   
 - **Backend:**
-  - [pnpm](https://pnpm.io/)
-  - [TypeScript](https://www.typescriptlang.org/)
   - [NestJs](https://nestjs.com/)
+  - [TypeScript](https://www.typescriptlang.org/)
+  - [pnpm](https://pnpm.io/)
   
 - **Contenedores:**
   - [Docker](https://www.docker.com/)
