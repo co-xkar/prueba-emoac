@@ -2,27 +2,6 @@
 
 ¡Bienvenido a **Mi Proyecto**! Este repositorio alberga una aplicación full-stack compuesta por un **frontend** construido con **Vite**, **React** y **TypeScript**, y un **backend** (especificaciones del backend pueden variar). Ambos servicios están dockerizados y orquestados usando **Docker Compose**, lo que facilita su despliegue y gestión en diferentes entornos.
 
-## Índice
-
-1. [Características](#características)
-2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-3. [Estructura del Proyecto](#estructura-del-proyecto)
-4. [Prerrequisitos](#prerrequisitos)
-5. [Instalación y Configuración](#instalación-y-configuración)
-   - [1. Clonar el Repositorio](#1-clonar-el-repositorio)
-6. [Uso de Docker Compose](#uso-de-docker-compose)
-   - [1. Construir y Levantar los Servicios](#1-construir-y-levantar-los-servicios)
-   - [2. Acceder a la Aplicación](#2-acceder-a-la-aplicación)
-   - [3. Detener y Eliminar los Contenedores](#3-detener-y-eliminar-los-contenedores)
-7. [Desarrollo Local](#desarrollo-local)
-8. [Solución de Problemas](#solución-de-problemas)
-9. [Buenas Prácticas](#buenas-prácticas)
-10. [Contribuciones](#contribuciones)
-11. [Licencia](#licencia)
-12. [Contacto](#contacto)
-
----
-
 ## Características
 
 - **Frontend:**
@@ -87,7 +66,7 @@ VITE_GET_NODOS_PATH=/nodes
 VITE_NODE_ENV=development
 ```
 
-### 1. Construir y Levantar los Servicios
+### 3. Construir y Levantar los Servicios
 
 En la raíz del proyecto, ejecuta el siguiente comando para construir las imágenes y levantar los servicios en segundo plano:
 
@@ -100,12 +79,12 @@ docker-compose up --build -d
 - `--build`: Fuerza la reconstrucción de las imágenes, asegurando que cualquier cambio en el código o en el `Dockerfile` se refleje en los contenedores.
 - `-d`: Ejecuta los contenedores en segundo plano (modo "detached").
 
-### 2. Acceder a la Aplicación
+### 4. Acceder a la Aplicación
 
 - **Frontend:** Abre tu navegador y navega a [http://localhost:80](http://localhost:80). Deberías ver tu aplicación frontend en funcionamiento.
 - **Backend:** Accede a [http://localhost:3000](http://localhost:3000).
 
-### 3. Detener y Eliminar los Contenedores
+### 5. Detener y Eliminar los Contenedores
 
 Para detener los servicios y eliminar los contenedores, redes y volúmenes creados por Docker Compose, ejecuta:
 
@@ -114,7 +93,7 @@ docker-compose down
 ```
 ---
 
-## Contacto
+## 6. Contacto
 
 Si tienes alguna pregunta o necesitas más información, no dudes en contactarme:
 
