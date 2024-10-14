@@ -45,14 +45,14 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes en 
 
 ## Instalación y Configuración
 
-### 1. Clonar el Repositorio
+### Clonar el Repositorio
 
 ```bash
 git clone https://github.com/co-xkar/prueba-emoac.git
 cd prueba-emoac
 ```
 
-### 2. Configurar Variables de Entorno
+### Configurar Variables de Entorno
 
 El proyecto utiliza archivos `.env` para gestionar variables de entorno en el frontend. Las variables ya vienen incluidas.
 
@@ -66,7 +66,7 @@ VITE_GET_NODOS_PATH=/nodes
 VITE_NODE_ENV=development
 ```
 
-### 3. Construir y Levantar los Servicios
+### Construir y Levantar los Servicios
 
 En la raíz del proyecto, ejecuta el siguiente comando para construir las imágenes y levantar los servicios en segundo plano:
 
@@ -74,17 +74,12 @@ En la raíz del proyecto, ejecuta el siguiente comando para construir las imáge
 docker-compose up --build -d
 ```
 
-**Explicación de las Opciones:**
-
-- `--build`: Fuerza la reconstrucción de las imágenes, asegurando que cualquier cambio en el código o en el `Dockerfile` se refleje en los contenedores.
-- `-d`: Ejecuta los contenedores en segundo plano (modo "detached").
-
-### 4. Acceder a la Aplicación
+### Acceder a la Aplicación
 
 - **Frontend:** Abre tu navegador y navega a [http://localhost:80](http://localhost:80). Deberías ver tu aplicación frontend en funcionamiento.
 - **Backend:** Accede a [http://localhost:3000](http://localhost:3000).
 
-### 5. Detener y Eliminar los Contenedores
+### Detener y Eliminar los Contenedores
 
 Para detener los servicios y eliminar los contenedores, redes y volúmenes creados por Docker Compose, ejecuta:
 
@@ -93,7 +88,7 @@ docker-compose down
 ```
 ---
 
-## 6. Contacto
+## Contacto
 
 Si tienes alguna pregunta o necesitas más información, no dudes en contactarme:
 
