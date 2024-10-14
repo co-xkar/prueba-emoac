@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: ./emoac-nodo-services
+      dockerfile: Dockerfile
+    container_name: emoac-nodo-service
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+    networks:
+      - app-network
+
+  frontend:
+    env_file: ./emoac-nodo-front/.env
+    build:
+      context: ./emoac-nodo-front
+      dockerfile: Dockerfile
+    container_name: emoac-nodo-front
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
